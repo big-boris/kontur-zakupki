@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     pug = require('gulp-pug'),
     pug_chunks = require('gulp-pug'),
+    // tinypng = require('gulp-tinypng'),
     watch_chunks = require('gulp-watch'),
     webserver = require('gulp-webserver');
 
@@ -46,6 +47,12 @@ gulp.task('js', function() {
   return gulp.src('builds/dev/js/*.js')
     .pipe(gulp.dest('builds/dist/assets/kontur_zkp/js'))
 });
+
+// gulp.task('tinypng', function() {
+//   return gulp.src('builds/dev/img/**/*')
+//     .pipe(tinypng('SizdWrxcMKMi31oXq2C12p2xEkwkPTTU')) //key of webdb81
+//     .pipe(gulp.dest('builds/dist/assets/kontur_zkp/img'));
+// });
 
 gulp.task('img', function() {
   return gulp.src('builds/dev/img/**/*')

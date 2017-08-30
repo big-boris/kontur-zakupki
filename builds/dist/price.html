@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Сервис поиска государственных закупок</title>
+    <link rel="stylesheet" type="text/css" href="/assets/kontur_zkp/css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/kontur_zkp/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="/assets/kontur_zkp/css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="/assets/kontur_zkp/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/kontur_zkp/css/jquery.formstyler.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/kontur_zkp/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/kontur_zkp/css/adaptive.css">
+    <!-- <base href="[[++site_url]]" />-->
+  </head>
+  <body class="price-page">
+    <header class="header panel">
+      <div class="container container_panel">
+        <div class="container__row">
+          <div class="header__logo panel__logo container__col"><a class="logo logo_white" href="./"><img class="logo__img" src="/assets/kontur_zkp/img/logo_green.png" alt=""><span class="logo__text">mskkontur.ru</span></a></div>
+          <div class="header__nav panel__nav container__col">
+            <ul class="nav">
+              <li class="nav__item nav__item-hidden_md"><a class="nav__link" href="">Онлайн-кассы</a></li>
+              <li class="nav__item nav__item-hidden_md"><a class="nav__link" href="">ЭЦП</a></li>
+              <li class="nav__item nav__item-hidden_md"><a class="nav__link" href="">Сдача отчётности</a></li>
+              <li class="nav__item nav__item-sub"><a class="nav__link" href="javascript:void(0);"><i class="icon-burger"></i>Все продукты</a>
+                <ul class="sub-nav">
+                  <li class="sub-nav__item"><a class="sub-nav__link" href="#"><img class="sub-nav__item-ico" src="/assets/kontur_zkp/img/ico/products/extern-ico.png" alt="Контур Экстерн"><span class="sub-nav__product"><span class="sub-nav__product-title">Экстерн</span><span class="sub-nav__product-desc">Отчетность и другие сервисы для бухгалтера</span></span></a></li>
+                  <li class="sub-nav__item"><a class="sub-nav__link" href="#"><img class="sub-nav__item-ico" src="/assets/kontur_zkp/img/ico/products/ofd-ico.png" alt="Контур ОФД"><span class="sub-nav__product"><span class="sub-nav__product-title">ОФД</span><span class="sub-nav__product-desc">Передача фискальных данных</span></span></a></li>
+                  <li class="sub-nav__item"><a class="sub-nav__link" href="#"><img class="sub-nav__item-ico" src="/assets/kontur_zkp/img/ico/products/udocenter-ico.png" alt="Контур Удостоверяющий Центр"><span class="sub-nav__product"><span class="sub-nav__product-title">Удостоверяющий центр</span><span class="sub-nav__product-desc">Электронная подпись для любых задач</span></span></a></li>
+                  <li class="sub-nav__item"><a class="sub-nav__link" href="#"><img class="sub-nav__item-ico" src="/assets/kontur_zkp/img/ico/products/zakupki-ico.png" alt="Контур Закупки"><span class="sub-nav__product"><span class="sub-nav__product-title">Закупки</span><span class="sub-nav__product-desc">Поиск и анализ закупок</span></span></a></li>
+                  <li class="sub-nav__item"><a class="sub-nav__link" href="#"><img class="sub-nav__item-ico" src="/assets/kontur_zkp/img/ico/products/alkoreport-ico.png" alt="Контур ЕГАИС"><span class="sub-nav__product"><span class="sub-nav__product-title">Алкогольная отчетность</span><span class="sub-nav__product-desc">Подготовка и отправка отчетности в ФСРАР</span></span></a></li>
+                  <li class="sub-nav__item"><a class="sub-nav__link" href="#"><img class="sub-nav__item-ico" src="/assets/kontur_zkp/img/ico/products/diadok-ico.png" alt="Контур Диадок"><span class="sub-nav__product"><span class="sub-nav__product-title">Диадок</span><span class="sub-nav__product-desc">Электронный документооборот</span></span></a></li>
+                  <li class="sub-nav__item"><a class="sub-nav__link" href="#"><img class="sub-nav__item-ico" src="/assets/kontur_zkp/img/ico/products/normativ-ico.png" alt="Контур Норматив"><span class="sub-nav__product"><span class="sub-nav__product-title">Норматив</span><span class="sub-nav__product-desc">Справочно-правовой сервис</span></span></a></li>
+                  <li class="sub-nav__item"><a class="sub-nav__link" href="#"><img class="sub-nav__item-ico" src="/assets/kontur_zkp/img/ico/products/fokus-ico.png" alt="Контур Фокус"><span class="sub-nav__product"><span class="sub-nav__product-title">Фокус</span><span class="sub-nav__product-desc">Проверка контрагентов</span></span></a></li>
+                  <li class="sub-nav__item"><a class="sub-nav__link" href="#"><img class="sub-nav__item-ico" src="/assets/kontur_zkp/img/ico/products/elba-ico.png" alt="Контур Эльба"><span class="sub-nav__product"><span class="sub-nav__product-title">Эльба</span><span class="sub-nav__product-desc">Бухгалтерия для ИП</span></span></a></li>
+                  <li class="sub-nav__item"><a class="sub-nav__link" href="#"><img class="sub-nav__item-ico" src="/assets/kontur_zkp/img/ico/products/bukhg-ico.png" alt="Контур Бухгалтерия"><span class="sub-nav__product"><span class="sub-nav__product-title">Бухгалтерия</span><span class="sub-nav__product-desc">Бухгалтерия, отчетность, зарплата</span></span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="header__phone panel__phone container__col"><a class="phone" href="tel:88007707448">8 800 770 74 48</a></div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </header>
+    <div class="section price">
+      <div class="container">
+        <div class="section__header title">Тарифы и цены</div>
+        <form class="price__row" action="" method="post">
+          <div class="container__col price__col">
+            <div class="price__wrapper">
+              <div class="price__header title js-price-fix">Старт</div>
+              <div class="price__options js-price-fix">
+                <label class="price__line">
+                  <input type="checkbox" name="zkp_chbx_price1" checked disabled><span class="price__options-desc">Поиск закупок по 44-ФЗ</span>
+                </label>
+                <label class="price__line">
+                  <input type="checkbox" name="zkp_chbx_price1" checked disabled><span class="price__options-desc">Шаблоны поиска и уведомления на электронную почту по ним</span>
+                </label>
+                <label class="price__line price__line_disabled">
+                  <input type="checkbox" name="zkp_chbx_price1" disabled><span class="price__options-desc">Поиск закупок по 223-ФЗ и коммерческим площадкам</span>
+                </label>
+                <label class="price__line price__line_disabled">
+                  <input type="checkbox" name="zkp_chbx_price1" disabled><span class="price__options-desc">Избранное и цветные метки</span>
+                </label>
+                <label class="price__line price__line_disabled">
+                  <input type="checkbox" name="zkp_chbx_price1" disabled><span class="price__options-desc">Выгрузка в Excel</span>
+                </label>
+                <label class="price__line price__line_disabled">
+                  <input type="checkbox" name="zkp_chbx_price1" disabled><span class="price__options-desc">Протоколы завершённых закупок</span>
+                </label>
+                <label class="price__line price__line_disabled">
+                  <input type="checkbox" name="zkp_chbx_price1" disabled><span class="price__options-desc">Анализ заказчиков и конкурентов</span>
+                </label>
+                <label class="price__line price__line_disabled">
+                  <input type="checkbox" name="zkp_chbx_price1" disabled><span class="price__options-desc">Поиск запланированных закупок по 44-ФЗ, 223-ФЗ</span>
+                </label>
+                <label class="price__line price__line_disabled">
+                  <input type="checkbox" name="zkp_chbx_price1" disabled><span class="price__options-desc">Арбитражные дела</span>
+                </label>
+                <label class="price__line price__line_disabled">
+                  <input type="checkbox" name="zkp_chbx_price1" disabled><span class="price__options-desc">Вебинары от экспертов</span>
+                </label>
+              </div>
+              <div class="price__price">4 500 Р в год</div>
+              <div class="price__action"><a class="button button_wide" href="order-tariff.html">Подключиться</a></div>
+            </div>
+          </div>
+          <div class="container__col price__col">
+            <div class="price__wrapper">
+              <div class="price__header title js-price-fix">Стандарт</div>
+              <div class="price__options js-price-fix">
+                <label class="price__line">
+                  <input type="checkbox" name="zkp_chbx_price2" checked disabled><span class="price__options-desc">Поиск закупок по 44-ФЗ</span>
+                </label>
+                <label class="price__line">
+                  <input type="checkbox" name="zkp_chbx_price2" checked disabled><span class="price__options-desc">Шаблоны поиска и уведомления на электронную почту по ним</span>
+                </label>
+                <label class="price__line">
+                  <input type="checkbox" name="zkp_chbx_price2" checked disabled><span class="price__options-desc">Поиск закупок по 223-ФЗ и коммерческим площадкам</span>
+                </label>
+                <label class="price__line">
+                  <input type="checkbox" name="zkp_chbx_price2" checked disabled><span class="price__options-desc">Избранное и цветные метки</span>
+                </label>
+                <label class="price__line">
+                  <input type="checkbox" name="zkp_chbx_price2" checked disabled><span class="price__options-desc">Выгрузка в Excel</span>
+                </label>
+                <label class="price__line">
+                  <input type="checkbox" name="zkp_chbx_price2" checked disabled><span class="price__options-desc">Протоколы завершённых закупок</span>
+                </label>
+                <label class="price__line price__line_disabled">
+                  <input type="checkbox" name="zkp_chbx_price2" disabled><span class="price__options-desc">Анализ заказчиков и конкурентов</span>
+                </label>
+                <label class="price__line price__line_disabled">
+                  <input type="checkbox" name="zkp_chbx_price2" disabled><span class="price__options-desc">Поиск запланированных закупок по 44-ФЗ, 223-ФЗ</span>
+                </label>
+                <label class="price__line price__line_disabled">
+                  <input type="checkbox" name="zkp_chbx_price2" disabled><span class="price__options-desc">Арбитражные дела</span>
+                </label>
+                <label class="price__line price__line_disabled">
+                  <input type="checkbox" name="zkp_chbx_price2" disabled><span class="price__options-desc">Вебинары от экспертов</span>
+                </label>
+              </div>
+              <div class="price__price">12 000 Р в год</div>
+              <div class="price__action"><a class="button button_wide" href="order-tariff.html">Подключиться</a></div>
+            </div>
+          </div>
+          <div class="container__col price__col">
+            <div class="price__wrapper">
+              <div class="price__header title js-price-fix">Эксперт</div>
+              <div class="price__options js-price-fix">
+                <label class="price__line">
+                  <input type="checkbox" name="zkp_chbx_price3" checked disabled><span class="price__options-desc">Поиск закупок по 44-ФЗ</span>
+                </label>
+                <label class="price__line">
+                  <input type="checkbox" name="zkp_chbx_price3" checked disabled><span class="price__options-desc">Шаблоны поиска и уведомления на электронную почту по ним</span>
+                </label>
+                <label class="price__line">
+                  <input type="checkbox" name="zkp_chbx_price3" checked disabled><span class="price__options-desc">Поиск закупок по 223-ФЗ и коммерческим площадкам</span>
+                </label>
+                <label class="price__line">
+                  <input type="checkbox" name="zkp_chbx_price3" checked disabled><span class="price__options-desc">Избранное и цветные метки</span>
+                </label>
+                <label class="price__line">
+                  <input type="checkbox" name="zkp_chbx_price3" checked disabled><span class="price__options-desc">Выгрузка в Excel</span>
+                </label>
+                <label class="price__line">
+                  <input type="checkbox" name="zkp_chbx_price3" checked disabled><span class="price__options-desc">Протоколы завершённых закупок</span>
+                </label>
+                <label class="price__line">
+                  <input type="checkbox" name="zkp_chbx_price3" checked disabled><span class="price__options-desc">Анализ заказчиков и конкурентов</span>
+                </label>
+                <label class="price__line">
+                  <input type="checkbox" name="zkp_chbx_price3" checked disabled><span class="price__options-desc">Поиск запланированных закупок по 44-ФЗ, 223-ФЗ</span>
+                </label>
+                <label class="price__line">
+                  <input type="checkbox" name="zkp_chbx_price3" checked disabled><span class="price__options-desc">Арбитражные дела</span>
+                </label>
+                <label class="price__line">
+                  <input type="checkbox" name="zkp_chbx_price3" checked disabled><span class="price__options-desc">Вебинары от экспертов</span>
+                </label>
+              </div>
+              <div class="price__price">26 500 Р в год</div>
+              <div class="price__action"><a class="button button_wide" href="order-tariff.html">Подключиться</a></div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </form>
+      </div>
+    </div>
+    <footer class="footer panel">
+      <div class="container container_panel">
+        <div class="container__row">
+          <div class="footer__logo panel__logo-footer container__col"><a class="logo" href="./"><img class="logo__img" src="/assets/kontur_zkp/img/logo.png" alt=""><span class="logo__text-footer">Оптимизация документооборота</span></a></div>
+          <div class="footer__nav panel__nav-footer container__col">
+            <ul class="nav">
+              <li class="nav__item"><a class="nav__link" href="#products">Продукты</a></li>
+              <li class="nav__item"><a class="nav__link js-scroll" href="#clients">Клиенты</a></li>
+              <li class="nav__item"><a class="nav__link js-scroll" href="#contacts">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__phone panel__phone-footer container__col"><a class="phone" href="tel:+78007707448"><span class="phone__code">8 800</span>  770 74 48</a></div>
+          <div class="clear"></div>
+        </div>
+        <div class="footer__copyright"><a class="footer__copyright-link" href="http://www.ne-prosto.ru/" target="_blank"><img class="footer__copyright-img" src="/assets/kontur_zkp/img/neprosto.png" alt=""></a></div>
+      </div>
+    </footer><!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyAhMn7wsvYfWh1P7HUelatXxZ3dDXS601w"></script>
+    <script type="text/javascript" src="/assets/kontur_zkp/js/google.map.js"></script>
+    <script type="text/javascript" src="/assets/kontur_zkp/js/inputmask.min.js"></script>
+    <script type="text/javascript" src="/assets/kontur_zkp/js/jquery.inputmask.min.js"></script>
+    <script type="text/javascript" src="/assets/kontur_zkp/js/magnific-popup.min.js"></script>
+    <script type="text/javascript" src="/assets/kontur_zkp/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="/assets/kontur_zkp/js/formstyler.min.js"></script>
+    <script type="text/javascript" src="/assets/kontur_zkp/js/script.js"></script>
+  </body>
+</html>
