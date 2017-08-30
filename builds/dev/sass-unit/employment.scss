@@ -1,0 +1,41 @@
+.employment {}
+.employment__item {
+  position: relative;
+  padding: 25px 16px;
+  text-align: center;
+  &::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+}
+.employment__ico {
+  display: inline-block; 
+  vertical-align: middle;
+  width: 120px;
+  height: 120px;
+  background: $maincolor;
+  border-radius: 50%;
+  @include shadow_employment;
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+}
+.employment__img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.employment__title {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: $maincolor;
+}
+.employment__text {
+  width: 90%;
+  margin: 0 auto;
+}

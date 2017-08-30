@@ -1,0 +1,44 @@
+// variables
+$maincolor: #3382be;
+$maincolor_hover: #3590d2;
+$black: #000000;
+$white: #ffffff;
+$textcolor: #222222;
+$invalidcolor: #f45a57;
+$body-bgcolor: #fafafa;
+$stocks-bgcolor: #eff0f0;
+$border-black_thin: 1px solid #000;
+$border-gray_thin: 1px solid rgba(255, 255, 255, .2);
+$border-thick_maincolor: 3px solid $maincolor;
+$shadow-gray: 0 39px 57px rgba(0,0,0,.19);
+$shadow-gray_hover: 0 49px 57px rgba(0,0,0,.53);
+$transition-value: all .3s ease;
+
+// mixins
+@mixin shadowmain {
+  -webkit-box-shadow: $shadow-gray;
+     -moz-box-shadow: $shadow-gray;
+      -ms-box-shadow: $shadow-gray;
+          box-shadow: $shadow-gray;
+}
+@mixin shadowmain_hover {
+  -webkit-box-shadow: $shadow-gray_hover;
+     -moz-box-shadow: $shadow-gray_hover;
+      -ms-box-shadow: $shadow-gray_hover;
+          box-shadow: $shadow-gray_hover;
+}
+@mixin transition {
+  -webkit-transition: $transition-value;
+       -o-transition: $transition-value;
+          transition: $transition-value;
+}
+@mixin shadow_employment {
+  -webkit-box-shadow: 8px 12px 43px rgba(51,130,190,.35);
+     -moz-box-shadow: 8px 12px 43px rgba(51,130,190,.35);
+          box-shadow: 8px 12px 43px rgba(51,130,190,.35);
+}
+@mixin placeholder {
+  opacity: 1;
+  font-weight: 300;
+  color: #393939;
+}
