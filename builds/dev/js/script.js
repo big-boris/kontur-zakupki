@@ -128,33 +128,6 @@ $(function () {
   }
   priceFix();
 
-  // выравнивание высоты прайса
-  function priceFix2 () {
-    $('.js-price-fix2').height('auto');
-
-    if(window.innerWidth >= 992) {
-      var maxHprice = [ 0, 0];
-      $('.js-price-fix2').each(function () {
-        var h = $(this).outerHeight(),
-          i = 0;
-        if($(this).hasClass('price__options')) {
-          i = 1;
-        }
-        if(h > maxHprice[i]) {
-          maxHprice[i] = h;
-        }
-      });
-      $('.js-price-fix2').each(function () {
-        var i = 0;
-        if($(this).hasClass('price__options')) {
-          i = 1;
-        }
-        $(this).outerHeight(maxHprice[i]);
-      });
-    }
-  }
-  priceFix2();
-
   $(window).resize(function () {
     contactsFix();
   });
@@ -191,45 +164,6 @@ $(function () {
     ],
     dots: false,
   });
-
-  //==== расчет стоимости тарифа с учетом периода и количества организаций
-  function price_format (a) {
-    return String(a).replace(/(\d{1,3}(?=(\d{3})+(?:\.\d|\b)))/g,"\$1 ");
-  }
-  function calculate_cost() {
-    var form_tarif = $('.js-calculate-cost').closest('form'),
-        sum_cost = form_tarif.find('.js-summary-cost'),
-        rbtnPeriod = form_tarif.find('input[name=tariff_period]:checked'),
-        rbtnPeriod_name = rbtnPeriod.attr('data-period'),
-        rbtnPeriod_cost = parseInt( rbtnPeriod.attr('data-period-cost') );
-    var rbtnOrgs = form_tarif.find('input[name=tariff_orgnumber]:checked'),
-        rbtnOrgs_number = parseInt( rbtnOrgs.attr('data-orgnumber') ),
-        rbtnOrgs_discyear = parseFloat( rbtnOrgs.attr('data-discount-year').replace(",", ".") ),
-        rbtnOrgs_disc2year = parseFloat( rbtnOrgs.attr('data-discount-2year').replace(",", ".") ),
-        cost_transfer = $('input[name=cost_transfer]'),
-        cost_result;
-    switch ( rbtnPeriod_name ) {
-      case '2year':
-        cost_result = price_format(rbtnPeriod_cost * rbtnOrgs_number * rbtnOrgs_disc2year);
-        sum_cost.html( cost_result );
-        cost_transfer.val( cost_result );
-        // console.log( rbtnOrgs_disc2year );
-        // console.log( cost_result );
-        break;
-      case 'year':
-        cost_result = price_format(rbtnPeriod_cost * rbtnOrgs_number * rbtnOrgs_discyear);
-        sum_cost.html( cost_result );
-        cost_transfer.val( cost_result );
-        break;
-      case 'quarter':
-        cost_result = price_format(rbtnPeriod_cost * rbtnOrgs_number);
-        sum_cost.html( cost_result );
-        cost_transfer.val( cost_result );
-        break;
-    }
-  };
-  $('.js-calculate-cost').click(function() { calculate_cost(); });
-
 
   // Прижатие подвала
   //          - [all]
